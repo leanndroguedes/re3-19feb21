@@ -720,7 +720,7 @@ CCamera::Process(void)
 	else
 		LODDistMultiplier = 1.0f;
 	// missing on PS2
-	GenerationDistMultiplier = 70.0f/CDraw::GetFOV() * fmin(CDraw::GetAspectRatio(),1.82f)/(4.0f/3.0f);
+	GenerationDistMultiplier = LODDistMultiplier;
 	LODDistMultiplier *= CRenderer::ms_lodDistScale;
 	//
 
